@@ -4,18 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Pagina de links </title>
+    <style>
+        th, td{
+            width: 30%;
+            border: 2px solid rgb(0, 0, 0);
+            text-align: center;
+        }
+    </style>
+    <script>
+        function Mudar() {
+            document.getElementById("jorge").innerHTML = "João";
+        }
+    </script>
 </head>
 <body>
     <h1> Tipos de Visitas ao Adobe Color: </h1>
+    <img src="https://imgs.search.brave.com/dp1ipE5wrXxMPJjjIJv43d0eYlkfM8NOx56xsC2BN00/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly8xMDAw/bG9nb3MubmV0L3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIwLzA4/L0Fkb2JlLUxvZ28t/NTAweDMxMy5qcGc" alt="adobe-image" style="width: 100px;">
     <h4> Na mesma janela </h4>
     <a href="https://color.adobe.com/pt/create/color-wheel" target="_self"> <img src="../img/Adobe_Acrobat_DC_logo_2020.webp" style="width:42px; height:42px;" ></a>
     <br>
     <h4> Em outra Janela </h4>
     <a href="https://color.adobe.com/pt/create/color-wheel" target="_blank"> <img src="../img/Adobe_Acrobat_DC_logo_2020.webp" style="width:42px; height:42px;" ></a>
+    <hr>
     <br>
     <button onclick="document.location = 'linkar.html'">Voltar ao Primeiro Link</button>
     <br>
     <button><a href="../index.html">Voltar Inicio</a></button>
+    <br>
+    <button><a href="linkar.html #C1">Relacionado a Cores</a></button>
+    <hr>
+    <h5>Dados Aleatorios:</h5>
+    <table style="width: 30%; border: 2px solid rgb(0, 0, 0); ">
+        <caption> Tabela de Alguém </caption>
+        <colgroup>
+            <col span="2" style="background-color: rgba(122, 122, 122, 0.37);">
+            <col span="1" style="background-color: rgba(161, 87, 87, 0.37);">
+        </colgroup>
+        <!-- colspan e rowspan em th, testar -->
+        <tr>
+            <th>Nome</th> 
+            <th>Sexo</th>
+            <th>Cpf</th>
+        </tr>
+        <tr>
+            <td id="jorge">Carlos</td> 
+            <td>Masculino</td>
+            <td>111.********</td>
+        </tr>
+        <tr>
+            <td>Janeide</td> 
+            <td>Feminino</td>
+            <td>113.********</td>
+        </tr>
+    </table>
+        <button onclick="Mudar()"> Alterar Carlos para João</button>
+    <hr>
+    <h4> O que vimos aqui: </h4>
+    <ol type="I">
+        <li>Adobes</li>
+        <li>Links</li>
+        <li>Tabelas</li>
+    </ol>
 
 </body>
 </html>

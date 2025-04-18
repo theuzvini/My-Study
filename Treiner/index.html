@@ -4,33 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treino de Html e Css</title>
+    <link rel="shortcut icon" href="img/green-icon-10-87db5c5af66b7f1272c18b1bee2a478d30104e9f671484fb9f89ed306c473c10.webp" type="x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .conteiner1{
+            background-color: rgba(255, 194, 190, 0.2);
+            border: 1px solid #000;
+        }
+    </style>
 </head>
 <body>
-    <img src="img/imagem qualquer.webp"  width ="1335" height="350">
-    <p> <cite>A imagem </cite> por TechTudo, 26/03/2025 </p>
-    <h1 title="Eu sou um cabeçalho!"> Olá! Bem-Vindo ao meu <abbr title="Hiper Text Markup Language">HTML</abbr></h1>
-    <h2> Um lugar de testes e ajustes </h2>
-    <br>
-    <h3> Conceito: </h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptates minus voluptas.</p>
-    <p> Sim esse paragrafo foi <br> quebrado, diferente do de baixo: </p>
-    <pre style="color: rgb(3, 69, 145);">
-        <blockquote cite="http://www.vozesdeminhacabeça/index.html">
-        <q>Ao sopro do vento vai.
-        Nas correntes dos mares se esvai.
-        A esprança de um dia a encontrar.</q>
-        </blockquote>
-    </pre>
+    <!-- Grande parte dos elemntos e tags podem receber IDs e Class -->
+     <!-- id só pode ser usado em elemntos unicos
+     classes podem ser usados em multiplos elementos -->
+    <div class="conteiner1">
+        <img src="img/imagem qualquer.webp"  width ="1333" height="350">
+        <p> <cite>A imagem </cite> por TechTudo, 26/03/2025 </p>
+        <h1 title="Eu sou um cabeçalho!"> Olá! Bem-Vindo ao meu <abbr title="Hiper Text Markup Language">HTML</abbr></h1>
+        <h2> Um lugar de testes e ajustes </h2>
+    </div>
+
     <hr>
-    <h3> link de outras páginas: </h3>
-    <a href="html/linkar.html"> Primeiro Link </a>
     <br>
-    <a href="html/linkar2.html"> Adobe Color </a>
+
+    <div style="background-color: rgba(255, 219, 190, 0.2); border: 1px solid #000;">
+        <h4> O que você vai ver aqui: </h4>
+        <ul>
+            <li> Teste de elementos </li>
+            <li> Teste de tags </li>
+            <li> Teste de atributos </li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div style="background-color: rgba(254, 255, 190, 0.2); border: 1px solid #000;">
+        <h3> Conceito: </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span style="background-color: aqua;">Quae</span> voluptates minus voluptas.</p>
+        <p> Sim esse paragrafo foi <br> quebrado, diferente do de baixo: </p>
+        <pre style="color: rgb(3, 69, 145);">
+            <blockquote cite="http://www.vozesdeminhacabeça/index.html">
+                <q>Ao sopro do vento vai.
+                Nas correntes dos mares se esvai.
+                A esprança de um dia a encontrar.</q>
+            </blockquote>
+        </pre>
+    </div>
+
+    <hr>
+
+    <div style="background-color: rgba(221, 255, 190, 0.2); border: 1px solid #000;">
+        <h3> link de outras páginas: </h3>
+        <a href="html/linkar.html"> Primeiro Link </a>
+        <br>
+        <a href="html/linkar2.html"> Adobe Color </a>
+    </div>
+
     <hr><br>
-    <p>Web<sup> Site </sup> e Site<sub> Web </sub> </p>
-    <p> <b>Qual a necessidade?</b></p>
-    <p><strong>é importante!</strong></p>
-    <p> <i>Estilizar um Web Site também é <em>necessáario</em></i></p>
+
+    <div style="background-color: rgba(190, 255, 230, 0.2); border: 1px solid #000;">
+        <p>Web<sup> Site </sup> e Site<sub> Web </sub> </p>
+        <p> <b>Qual a necessidade?</b></p>
+        <p><strong>é importante!</strong></p>
+        <p> <i>Estilizar um Web Site também é <em>necessáario</em></i></p>
+    </div> 
+
+    <hr>
+
+    <div style="background-color: rgba(190, 226, 255, 0.2); border: 1px solid #000;">
+        <h4> O que vimos aqui: </h4>
+        <ol>
+            <li>Conceito</li>
+            <li>Poema</li>
+                <ul>
+                    <li> <mark>Grande</mark> Poema</li>
+                </ul>
+            <li>Site Web</li>
+        </ol>
+    </div>
+
 </body>
 </html>
