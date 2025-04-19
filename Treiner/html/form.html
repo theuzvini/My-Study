@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms HTML</title>
+    <link rel="shortcut icon" href="../img/green-icon-10-87db5c5af66b7f1272c18b1bee2a478d30104e9f671484fb9f89ed306c473c10.webp" type="x-icon">
+</head>
+<body>
+    <header>
+        <h1 id="C2">Bem-Vindo ao Formulario.<abbr title="Hiper Text Markup Language">html</abbr></h1>
+    </header>
+
+    <nav>
+        <button><a href="linkar.html">Ir para 2º página</a></button>
+        <button onclick="document.location = 'linkar2.html'">Ir para Adobe</button>
+    </nav>
+
+    <br>
+
+    <form action="../index.html" autocomplete="on" novalidate>
+        <fieldset>
+            <legend>Identidade</legend>
+            <label for="nome">Inserir seu Nome</label>
+            <input type="text" id="nome" name="nome" maxlength="20" placeholder="Nome" required>
+            <br><br>
+            <label for="senha">Inserir Senha ficticia</label>
+            <input type="password" id="senha" name="senha" maxlength="8" placeholder="Senha">
+            <br><br>
+            <label for="email">Digite seu Email ficticio:</label>
+            <input type="email" id="email" name="email" multiple placeholder="Email">
+            <br><br>
+            <label for="birthday">Aniversário:</label>
+            <input type="date" id="birthday" name="birthday">
+        </fieldset>
+        <fieldset>
+            <legend>Exemplos</legend>
+            <br><br>
+            <label for="b">Bom</label>
+            <input type="text" id="b" name="b" value="João Pedro" readonly>
+            <br><br>
+            <label for="r">Ruim</label>
+            <input type="text" id="r" name="r" value="131321321" disabled>
+            <br><br>
+            <label for="r">Ruim</label>
+            <input type="text" id="r" name="r" value="João Pedro de Alcantara Nascimento Afonso de Nobrega DonaLindu de Aguila" disabled size="62">
+            <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Gosto</legend>
+            <p> Qual a sua comida favorita? </p>
+            <input type="radio" id="lasanha" name="comida" value="">
+            <label for="lasanha">lasanha</label><br>
+            <input type="radio" id="pizza" name="comida" value="">
+            <label for="pizza">pizza</label><br>
+            <input type="radio" id="sushi" name="comida" value="">
+            <label for="sushi">sushi</label>
+            <br><br>
+            <label for="cor">Qual sua cor favorita?</label>
+            <input type="color" name="cor" id="cor">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Conhecimento</legend>
+            <p> Eu sei dirigir: </p>
+            <input type="checkbox" id="carro" name="veiculo" value="">
+            <label for="carro">Carro</label><br>
+            <input type="checkbox" id="bike" name="veiculo" value="">
+            <label for="bike">Bicicleta</label><br>
+            <input type="checkbox" id="moto" name="veiculo" value="">
+            <label for="moto">Moto</label><br>
+        </fieldset>
+        <br>
+        <input type="submit" value="Submeter e Voltar para inicio">
+        <input type="reset" value="Resetar form">
+    </form>
+
+    <hr><br>
+
+    <form action="../index.html">
+        <fieldset>
+            <legend>UF</legend>
+            <label for="estados">Escolha seu Estado:</label>
+            <select name="estados" id="estados" size="1">
+                <option value="pe">PE</option>
+                <option value="sp">SP</option>
+                <option value="mg">MG</option>
+                <option value="rj">RJ</option>
+                <option value="mt">MT</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Endereço</legend>
+            <p>Escolha sua capital:</p>
+            <input list="capital" name="capital">
+            <datalist id="capital">
+                <option value="re">Recife</option>
+                <option value="sp">São Paulo</option>
+                <option value="bh">Belo Horizonte</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="cb">Cuiába</option>
+            </datalist>
+        </fieldset>
+            <input type="submit" value="Submeter e Voltar para inicio">
+            <input type="reset" value="Resetar form">
+        <br>
+    </form>
+
+    <hr><br>
+
+    <form action="../index.html">
+        <textarea name="mensagem" rows="10" cols="30">Escreva seu texto aqui
+        </textarea>
+        <br><br>
+        <input type="submit" value="Enviar e voltar ao inicio">
+        <input type="reset" value="Resetar form">
+    </form>
+
+    <hr><br>
+    <button onclick="alert('Hello World!!')">Me clique!</button>
+</body>
+</html>
