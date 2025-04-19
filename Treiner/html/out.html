@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual</title>
+</head>
+<body>
+
+    <div>
+    <h1 id="C3">Bem-Vindo a última página <abbr title="Hiper Text Markup Language">HTML</abbr></h1>
+    <h3>Graficos-Mídia</h3>
+    </div>
+
+    <hr><br>
+
+    <nav>
+        <button><a href="../index.html">Inicio</a></button>
+        <button><a href="linkar.html">1ºLink</a></button>
+        <button><a href="linkar2.html">Adobe</a></button>
+        <button><a href="form.html">Formulário</a></button>
+    </nav>
+
+    <br><hr><br>
+
+    <div>
+        <canvas id="canva" width="200px" height="100px" style="border: 1px solid #000;"></canvas>
+        <canvas id="canva2" width="200px" height="100px" style="border: 1px solid #000;"></canvas>
+        <canvas id="canva3" width="200px" height="100px" style="border: 1px solid #000;"></canvas>
+        <canvas id="canva4" width="200px" height="100px" style="border: 1px solid #000;"></canvas>
+    </div>
+
+    <hr><br>
+
+    <div>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"/>
+        </svg>
+        <svg width="400" height="120">
+        <rect x="10" y="10" width="200" height="100"stroke="red" stroke-width="6" fill="blue"/>
+        </svg>
+        <svg height="130" width="500">
+            <defs>
+              <linearGradient id="grad1">
+                <stop offset="0%" stop-color="yellow" />
+                <stop offset="100%" stop-color="red" />
+              </linearGradient>
+            </defs>
+            <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+            <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+        </svg>
+    </div>
+
+    <script>
+        var c = document.getElementById("canva2");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(0,0);
+        ctx.lineTo(200,100);
+        ctx.stroke();
+
+        var c2 = document.getElementById("canva3");
+        var ctx = c2.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(95,50,40,0,2*Math.PI);
+        ctx.stroke();
+
+        var c3 = document.getElementById("canva4");
+        var ctx = c3.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.fillText("Hello World", 20, 60);
+        ctx.stroke();
+    </script>
+
+    <br><hr><br>
+
+    <div>
+        <video id="video" width="320" height="240" controls>
+            <source src="../video/video.mp4" type="video/mp4">
+        </video>
+        <br>
+        <button onclick="Usar()">Reproduzir/Pausar</button>
+        <button onclick="Aumentar()">Grande</button>
+        <button onclick="Diminuir()">Pequeno</button>
+        <button onclick="Normalizar()">Normal</button>
+    </div>
+
+    <br><hr><br>
+
+    <div>
+        <audio id="audio" controls>
+            <source src="../audio/chinese-beaver.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    <script>
+        var video = document.getElementById("video");
+
+        function Usar() {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+        function Aumentar() {
+            video.width = 420;
+            video.height = 340;
+        }
+        function Diminuir() {
+            video.width = 220;
+            video.height = 140;
+        }
+        function Normalizar() {
+            video.width = 320;
+            video.height = 240;
+        }
+    </script>
+    <br><hr>
+
+    <div>
+    <object width="50px" height="50px" data="../img/Adobe_Acrobat_DC_logo_2020.webp" type="" title="É um objeto no documneto"></object>
+    <br>
+    <embed width="50px" height="50px" src="../img/green-icon-10-87db5c5af66b7f1272c18b1bee2a478d30104e9f671484fb9f89ed306c473c10.webp" type="" title="Também sou um objeto no documento">
+    </div>
+
+    <hr>
+
+    <div>
+        <iframe width="420" height="315" src="https://www.techtudo.com.br/video/como-transformar-textos-em-videos-veja-5-ias-estilo-sora-12578600.ghtml"></iframe>
+    </div>
+</body>
+</html>
