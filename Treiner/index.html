@@ -6,6 +6,7 @@
     <title>Treino de Html e Css</title>
     <link rel="shortcut icon" href="img/green-icon-10-87db5c5af66b7f1272c18b1bee2a478d30104e9f671484fb9f89ed306c473c10.webp" type="x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="refresh" content="5">
     <style>
         .conteiner1{
             background-color: rgba(255, 194, 190, 0.2);
@@ -18,11 +19,21 @@
      <!-- id só pode ser usado em elemntos unicos
      classes podem ser usados em multiplos elementos -->
     <div class="conteiner1">
-        <img src="img/imagem qualquer.webp"  width ="1333" height="350">
+        <img src="img/imagem qualquer.webp" alt="Qualquer" width ="1333" height="350">
         <p> <cite>A imagem </cite> por TechTudo, 26/03/2025 </p>
-        <h1 title="Eu sou um cabeçalho!"> Olá! Bem-Vindo ao meu <abbr title="Hiper Text Markup Language">HTML</abbr></h1>
+        <h1 id="Titulo" title="Eu sou um cabeçalho!"> Olá! Bem-Vindo ao meu <abbr title="Hiper Text Markup Language">HTML</abbr></h1>
+        <button onclick="Mark()">Deixar texto destacado</button>
+        <button onclick="Marknone()">Retirar texto destacado</button>
         <h2> Um lugar de testes e ajustes </h2>
     </div>
+    <script>
+        function Mark() {
+            document.getElementById('Titulo').style.backgroundColor = "Yellow";  
+        }
+        function Marknone() {
+            document.getElementById('Titulo').style.backgroundColor = "Transparent";
+        }
+    </script>
 
     <hr>
     <br>
@@ -81,6 +92,7 @@
                 </ul>
             <li>Site Web</li>
         </ol>
+        <p>Copyright &#169;</p>
     </div>
 
 </body>
