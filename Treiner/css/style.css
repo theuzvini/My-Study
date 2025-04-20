@@ -1,0 +1,28 @@
+h1{/* sintaxe comum */
+    color: black;
+}
+p{ /* seletor simples */
+    color: #d66060;
+}
+.souh2{
+    color: rgb(112, 112, 67);
+}
+#hier1{
+    color: #60abd6;
+}
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ul, ol{
+    color: rgba(1, 66, 47, 0.6);
+}
+#conteiner2 {
+    background-color: rgb(255, 210, 173); 
+    border: 1px solid #000;
+}
+.conteiners {
+    background-color: rgb(243, 255, 173); 
+    border: 1px solid #000;
+}
+
+    
